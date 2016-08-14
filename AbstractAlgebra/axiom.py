@@ -15,7 +15,9 @@ class Axiom(metaclass=ABCMeta):
 			raise ValueError("Rule %s not function or generator" % str(rule))
 		self._rule = rule
 
-	@property
 	@abstractmethod
-	def confirm(self,value):
-		return self._rule(value)
+	def confirm():
+		"""
+		Classes should implement this as a static method
+		"""
+		raise NotImplementedError
