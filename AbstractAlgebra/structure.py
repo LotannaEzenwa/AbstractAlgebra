@@ -1,4 +1,5 @@
 from abc import ABCMeta, absractproperty
+
 class Structure(metaclass=ABCMeta):
 	"""
 	An Abstract Base Class for an Algebraic Structure
@@ -9,4 +10,3 @@ class Structure(metaclass=ABCMeta):
 	def __init__(self, set_obj, math_obj):
 		pass
 
-	
