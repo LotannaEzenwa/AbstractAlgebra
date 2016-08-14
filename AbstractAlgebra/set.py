@@ -48,7 +48,12 @@ class Specification(Axiom):
 	Defines the Axiom of Schema Specification:
 	Elements of a Set can be specified using a rule
 	"""
-	pass
+	def __init__(self):
+		pass
+
+	@staticmethod
+	def confirm(structure):
+		raise NotImplementedError
 
 class Pairing(Axiom):
 	"""
@@ -56,21 +61,36 @@ class Pairing(Axiom):
 	If x and y are sets, then there exists a set which contains x and y as elements.
 	(Implemented that two sets can be elements of another set)
 	"""
-	pass
+	def __init__(self):
+		pass
+
+	@staticmethod
+	def confirm(structure):
+		raise NotImplementedError
 
 class Union(Axiom):
 	"""
 	Defines the Axiom of Union:
 	Given any set A, there is a set B such that, for any element c, c is a member of B if and only if there is a set D such that c is a member of D and D is a member of A.
 	"""
-	pass
+	def __init__(self):
+		pass
+
+	@staticmethod
+	def confirm(structure):
+		raise NotImplementedError
 
 class Replacement(Axiom):
 	"""
 	Defines the Axiom Schema of Replacement:
 	The axiom schema of replacement asserts that the image of a set under any definable function will also fall inside a set.
 	"""
-	pass
+	def __init__(self):
+		pass
+
+	@staticmethod
+	def confirm(structure):
+		raise NotImplementedError
 
 class Infinity(Axiom):
 	"""
@@ -78,14 +98,24 @@ class Infinity(Axiom):
 	A set an be built be having an empty set unioned with y unioned with a set containing itself.
 	Or, There exists a set having infintely many members
 	"""
-	pass
+	def __init__(self):
+		pass
+
+	@staticmethod
+	def confirm(structure):
+		raise NotImplementedError
 
 class PowerSet(Axiom):
 	"""
 	Defines the Axiom of the Power Set:
 	The Axiom of Power Set states that for any set x, there is a set y that contains every subset of x:
 	"""
-	pass
+	def __init__(self):
+		pass
+
+	@staticmethod
+	def confirm(structure):
+		raise NotImplementedError
 
 		
 
