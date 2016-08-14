@@ -1,4 +1,4 @@
-from abc import ABCMeta, absractproperty
+from abc import ABCMeta, absractmethod
 
 class Structure(metaclass=ABCMeta):
 	"""
@@ -9,4 +9,9 @@ class Structure(metaclass=ABCMeta):
 	"""
 	def __init__(self, set_obj, math_obj):
 		pass
+
+	@property
+	@absractmethod
+	def get_axioms(self):
+		raise NotImplementedError
 
